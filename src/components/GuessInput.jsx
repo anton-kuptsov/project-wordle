@@ -7,7 +7,7 @@ export function GuessInput({ onSubmit, onChange, value, disabled }) {
         type="text"
         onChange={onChange}
         value={value}
-        pattern="\w{5,5}"
+        pattern={`\w{${NUM_OF_LETTERS_ALLOWED},${NUM_OF_LETTERS_ALLOWED}}`}
         disabled={disabled}
       />
     </form>

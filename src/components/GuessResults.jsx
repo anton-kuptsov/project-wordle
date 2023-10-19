@@ -4,8 +4,13 @@ import { GuessRow } from "./GuessRow";
 
 export function GuessResults({ guessResults, answer }) {
   const grid = new Array(NUM_OF_GUESSES_ALLOWED).fill("");
-  const emptyRow = new Array(5).fill({ letter: "", status: "" });
+  const emptyRow = new Array(NUM_OF_LETTERS_ALLOWED).fill({
+    letter: "",
+    status: "",
+  });
   const results = grid.map((guess, i) => guessResults[i] || guess);
+
+  console.log("test", Array(NUM_OF_GUESSES_ALLOWED).fill(""));
 
   return (
     <div className="guess-results">
