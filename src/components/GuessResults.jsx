@@ -10,8 +10,6 @@ export function GuessResults({ guessResults, answer }) {
   });
   const results = grid.map((guess, i) => guessResults[i] || guess);
 
-  console.log("test", Array(NUM_OF_GUESSES_ALLOWED).fill(""));
-
   return (
     <div className="guess-results">
       {results.map((guess) => {
