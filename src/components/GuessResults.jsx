@@ -1,4 +1,4 @@
-import { NUM_OF_GUESSES_ALLOWED } from "../constants";
+import { NUM_OF_GUESSES_ALLOWED, NUM_OF_LETTERS_ALLOWED } from "../constants";
 import { checkGuess } from "../game-helpers";
 import { GuessRow } from "./GuessRow";
 
